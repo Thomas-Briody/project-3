@@ -2,6 +2,7 @@ import React from 'react'
 
 
 export default function About() {
+  //*this is a comment
 
   return <div className="about-section">
     <div className="columns m-6">
