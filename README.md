@@ -32,7 +32,7 @@ Ensuring we followed the brief, the team discussed our initial ideas before agre
 
 <img src='https://i.imgur.com/GtHNPf6.png' width="650"/>
 
-We decided to split the process into stages, for efficiency and to ensure that nothing was missed when setting up the back-end.
+We decided to split the process into stages, for efficiency and to ensure that nothing was missed when setting up the back-end. Splitting up the process also allowed each member of the team to work on a different aspect of the setup, which allowed us to complete this on day 1. This in turn gave us more time to focus on the front-end and design of the website. 
 
 <img src='https://i.imgur.com/S8766wJ.png' width="465"/> <img src='https://i.imgur.com/bqBbL6h.png' width="305"/> <img src='https://i.imgur.com/p9RUHws.png' width="140"/>
 
@@ -52,3 +52,36 @@ From the start of the project, the vision was to create a clean and minimal webs
 
 One of my goals was to ensure that the website was responsive and adapts to changing screen sizes. I believe I have achieved this, as the navigation bar collapses when below a set width, and the company cards reduce depending on the side of the screen. 
 
+<img src='https://i.imgur.com/oBJeEoP.png' width="470"/><img src='https://i.imgur.com/z64Q0oI.png' width="430"/>
+
+<img src='https://i.imgur.com/vUI1QVy.png' width="470"/><img src='https://i.imgur.com/SS1uQrc.png' width="430"/>
+
+
+<h2>Challenges</h2>
+
+* The Main challenge with this project was having two different types of user, with different permissions and abilities. Differentiating these two user types proved difficult and a large amount of time was spent refining the code until this was working effectively. 
+* Getting the comments and rating features working also proved troublesome, specifically with regards to allowing job seekers to post comments and rate companies while blocking company administrators from doing the same: 
+
+```  async function handleComment() {
+
+    try {
+      await axios.post(`/api/company/${id}/comment`, { text }, {
+        headers: { Authorization: `Bearer ${token}` }
+      })
+        .then(resp => {
+          setText('')
+          updateCompany(resp.data)
+        })
+    } catch (err) {
+      console.log('TYPE', type)
+      if (type === 'company-admin') {
+        updateError('Companies cannot post comments!')
+      } else {
+        updateError('Please login to post a comment')
+      }
+    }
+  }
+  ```
+
+<h2>Conclusion</h2>
+I really enjoyed this project, and working with the team to create the final website. I feel that the aim of creating a clean and easy-to-nagivate website has been achieved. Throughout this project, my knowledge of React improved, as well as my knowledge of Bulma. I found that the back-end was relatively easy to set up also. More time to finish off the front-end would have been appreciated, however overall I am happy with the final website that we created. 
