@@ -24,3 +24,31 @@ Working in a group of 4, it was decided that we create a job recruitment website
 * **Be deployed online** so it's publicly accessible.
 * **Have automated tests** for _at least_ one RESTful resource on the back-end. 
 
+<h2>Approach</h2>
+
+<h4>Planning and setup</h4>
+
+Ensuring we followed the brief, the team discussed our initial ideas before agreeing on the idea of a job search website. Once this had been confirmed, we began outlining the pages that would be required to achieve the final product we were aiming for.
+
+<img src='https://i.imgur.com/GtHNPf6.png' width="650"/>
+
+We decided to split the process into stages, for efficiency and to ensure that nothing was missed when setting up the back-end.
+
+<img src='https://i.imgur.com/S8766wJ.png' width="465"/> <img src='https://i.imgur.com/bqBbL6h.png' width="305"/> <img src='https://i.imgur.com/p9RUHws.png' width="140"/>
+
+<h4>Data</h4>
+
+Company data  was hard-coded, with fake companies and logos being created individually. We wanted each company to have 3 job listings which were stored as an array of objects inside the company object itself. User data was also created, with a mixture of job seekers and company administrators. 1 Moderator user account was also created, and we differentiated this user by adding `isAdmin: { type: Boolean }` to the user schema (without making this a requirement) and adding `isAdmin: true` to the moderator user. 
+
+<h4>Routes</h4>
+
+The routes were set out as below in order to keep the project as neat as possible.
+
+<img src='https://i.imgur.com/Xgduglm.png' width="460"/> <img src='https://i.imgur.com/z6uAbx6.png' width="480"/>
+
+<h4>Front-end</h4>
+
+From the start of the project, the vision was to create a clean and minimal website that is easy to navigate from the user perspective. We chose Bulma as the CSS Framework to use as it is known for its simple aesthetic, and the team all had experience of using Bulma previously. Each page on the site was separated out into its own component, with each member of the team working on a different page at any given time. My focus during this project was on the Navigation bar, the Companies page, and the individual company page, and as such I spent the majority of my time working on these elements. I did also assist with the Jobs page and individual job page.
+
+One of my goals was to ensure that the website was responsive and adapts to changing screen sizes. I believe I have achieved this, as the navigation bar collapses when below a set width, and the company cards reduce depending on the side of the screen. 
+
