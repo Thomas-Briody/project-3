@@ -86,4 +86,4 @@ One of my goals was to ensure that the website was responsive and adapts to chan
 <h2>Conclusion</h2>
 I really enjoyed this project, and working with the team to create the final website. I feel that the aim of creating a clean and easy-to-navigate website has been achieved. Throughout this project, my knowledge of React improved, as well as my knowledge of Bulma. I found that the back-end was relatively easy to set up also. More time to finish off the front-end would have been appreciated, however overall I am happy with the final website that we created. 
 
-As we were able to impliment the back-end relatively quickly, we were afforded time to add in features that were initially marked as stretch goals, such as the rating system and the carousel on the home page, which add a lot to the overall feel of the website. 
+As we were able to implement the back-end relatively quickly, we were afforded time to add in features that were initially marked as stretch goals, such as the rating system and the carousel on the home page, which add a lot to the overall feel of the website. 
