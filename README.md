@@ -50,11 +50,11 @@ The routes were set out as below in order to keep the project as neat as possibl
 
 From the start of the project, the vision was to create a clean and minimal website that is easy to navigate from the user perspective. We chose Bulma as the CSS Framework to use as it is known for its simple aesthetic, and the team all had experience of using Bulma previously. Each page on the site was separated out into its own component, with each member of the team working on a different page at any given time. My focus during this project was on the Navigation bar, the Companies page, and the individual company page, and as such I spent the majority of my time working on these elements. I did also assist with the Jobs page and individual job page.
 
-One of my goals was to ensure that the website was responsive and adapts to changing screen sizes. I believe I have achieved this, as the navigation bar collapses when below a set width, and the company cards reduce depending on the side of the screen. 
+One of my goals was to ensure that the website was responsive and adapts to changing screen sizes. I believe I have achieved this, as the navigation bar collapses when below a set width, and the company cards reduce depending on the side of the screen. Below I have provided screenshots showing how the page looks, and outlining how the cards reduce in number from 4 down to 1 depending on the screen size.
 
 <img src='https://i.imgur.com/oBJeEoP.png' width="470"/><img src='https://i.imgur.com/z64Q0oI.png' width="430"/>
 
-<img src='https://i.imgur.com/vUI1QVy.png' width="470"/><img src='https://i.imgur.com/SS1uQrc.png' width="430"/>
+<img src='https://i.imgur.com/vUI1QVy.png' width="470"/><img src='https://i.imgur.com/SS1uQrc.png' width="350"/>
 
 
 <h2>Challenges</h2>
